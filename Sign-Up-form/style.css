@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+   
+}
+@font-face {
+    font-family:myFont;
+    src:url("Norse-Bold.otf");
+}
+#image {
+    display: flex;
+    min-height:200%;
+    width:400px;
+    margin-right: 40px;
+}
+.sub-container {
+    position: absolute;
+    color:white;
+    top:150px;
+    text-align: center;
+    background-color: rgba(11, 11, 11,0.5);
+    width: 400px;
+}
+#odin {
+   font-family:myFont;
+   font-size: 70px;
+}
+.container {
+    display: flex;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: normal;
+}
+.container2 {
+    margin-top: 80px;
+}
+#sub-content1 {
+    padding-top:10px;
+}
+#sub-content2 {
+    padding-top:50px;
+    padding-left: 20px;
+}
+#first_name {
+    margin-right: 80px;
+    
+}
+input:focus {
+    background-color: white;
+    border-color: blue;
+    box-shadow: 0px 4px 10px rgba(0,0,255,0.2);
+    outline:#E5E7EB;
+}
+input:invalid {}
+.names {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.form {
+    height: 250px;
+    background-color: #fdfeff;
+    padding-left: 20px;
+}
+fieldset {
+    border: none;
+    flex-direction: column;
+}
+input {
+    width:200px;
+    height: auto;
+    border:2px solid #E5E7EB;
+    font-size: 15px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#user_email {
+    margin-right: 120px;
+}
+.contacts {
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 10px;
+}
+#user_password {
+    margin-right: 80px;
+    border-color: red;
+}
+#user_password:focus {
+    border-color:blue;
+    box-shadow: 0px 4px 10px rgba(0,0,255,0.2);
+}
+#confirm_password {
+    border-color: red;
+}
+#confirm_password:focus {
+    border-color:blue;
+    box-shadow: 0px 4px 10px rgba(0,0,255,0.2);
+}
+.password {
+    display: flex;
+    justify-content: space-evenly;
+}
+ label {
+    display: block;
+    margin-bottom: 10px;
+ }
+ #login {
+    margin-top: 20px;
+    font-size: 14px;
+ }
+#button {
+   background-color: #596D48;
+   color: white;
+   width: 150px;
+   height: 35px;
+   border: none;
+   border-radius: 5px;
+   text-align: center;
+}
+.submit {
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: #596D48;
+}
+#button:hover {
+    background-color:#E5E7EB;
+    color: black;
+}
+.form2 {
+    padding-top: 30px;
+    height: 160px;
+    background-color: #f5f6f9;
+    box-shadow: 0px 0px 4px rgba(255,255,255,0.5);
+}
