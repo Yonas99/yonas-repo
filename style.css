@@ -1,0 +1,482 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1.5fr 1fr;
+}
+.header {
+    position: relative;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1.5fr;
+    gap: 24px;
+    padding: 16px 60px;
+    position: relative;
+    font-family: sans-serif;
+}
+.header .search {
+    margin-top: 20px;
+}
+#Search_bar {
+    text-align:center;
+}
+.search i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+.search i:hover {
+    transform: scale(1.1);
+}
+.fa-bell-ring:hover {
+    transform: scale(1.1);
+}
+.header1 {
+    display: grid;
+    grid-template: repeat(1,1fr) repeat(1,2fr) / repeat(1,3fr);
+}
+.header1 .search {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.header1 .search input {
+    margin-left: 8px;
+    width: 400px;
+    height: 28px;
+    border-radius: 15px;
+    border:0;
+    background-color: lightgray;
+}
+.header1 .profile {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns:  70px 1fr ;
+    margin-top: 15px;
+}
+.profile img {
+    margin-top: 28px;
+    height: 60px;
+    
+}
+.profile p{
+    margin-top: 32px;
+    font-weight: bold;
+    grid-column: 2/3;
+    font-size: 22px;
+}
+.profile p span {
+    
+    font-size: 15px;
+}
+.header2 h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header2{
+    display: grid;
+    grid-template: repeat(2,1fr) / repeat(1,1fr) repeat(1,2fr);
+}
+
+.profile2 {
+    display: grid;
+    grid-template: repeat(1,3fr) / repeat(1,1fr) repeat(1,3fr);
+}
+.header2 .profile2 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.header2 .profile2 h1{
+    margin-top: 0;
+    font-size: 15px;
+}
+.header2 .buttons {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    margin-top: 15px;
+}
+.profile2 .user {
+    width: 200px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    margin-top: 12px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    
+}
+.profile2 .user h1{
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 20px;
+    height:50px;
+    width:100%;
+}
+.profile2 i {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-size: 25px;
+    height: 40px;
+    width: 50px;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.profile2 img {
+    height: 40px;
+    width: 40px;   
+}
+img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.buttons button {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color:  rgb(10, 156, 205);
+    font-size: 12px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.buttons button:hover {
+    background-color: rgb(10, 61, 78);
+    transform: scale(1.1);
+}
+#new{
+    margin-right: 8px;
+}
+#upload{
+    margin-right: 8px;
+}
+.sidebar {
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    background-color: rgb(10, 156, 205);
+    color: white;
+    
+}
+.sidebar .dashboard {
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    align-items: center;
+    gap: 18px;
+    gap: 0;
+    font-family: sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.sidebar .dashboard i {
+    font-size: 35px;
+    margin-top: 10px;
+    padding-left: 10px; 
+}
+.sidebar .dashboard h1 {
+    padding-left:0;
+    margin-left: 0;
+    margin-top: 30px;
+}
+.contents {
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
+    gap: 5px;
+    text-align: center;
+    font-size: bold;
+    font-family: sans-serif;
+}
+.contents h2{
+    font-size: 16px;
+    text-align: left;
+}
+.contents i:hover {
+    transform: scale(1.2);
+}
+.contents .home a {
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .profile a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .tasks a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .messages a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .communities a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .history a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .Sub-contents .setting a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .Sub-contents .support a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .Sub-contents .privacy a{
+    display: grid;
+    grid-template-rows: repeat(1,1fr);
+    grid-template-columns: repeat(1,1fr) repeat(1,3fr);
+    color: white;
+}
+.contents .top-contents {
+    row-gap:auto;
+}
+.contents .top-contents i {
+    margin-top: 12px;
+}
+.contents .Sub-contents i {
+    margin-top: 12px;
+}
+.contents .Sub-contents {
+    margin-top:25px;
+}
+
+.Articles {
+    overflow: scroll;
+    background-color: rgba(234, 239, 245, 1);
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: grid;
+    grid-template: repeat(1,1.5fr) / repeat(1,2fr) repeat(1,1fr);
+    font-family: sans-serif;
+    margin-bottom: 0;
+    height: 750px;
+}
+.Articles .Your-Projects .projects {
+    grid-column: 1/2;
+    grid-row:1/2;
+    display: grid;
+    grid-template:repeat(3,1fr)/ repeat(2,1fr);
+    gap:20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.scp:hover {
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+   
+}
+.lcp:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.ia:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.epa:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.ab:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.mm:hover{
+    transform: scale(0.9);
+    transition-duration: 0.5s;
+}
+.projects h1 {
+    padding-top: 15px;
+}
+.projects>div {
+    position: relative;
+    border-left-color:  orange;
+    background-color: white;
+    border-radius: 8px;
+    border-width: 6px;
+    border-top-color: white;
+    border-bottom-color:white ;
+    border-right-color:white;
+    border-left-style: solid;
+    overflow: hidden;
+}
+.projects div .options {
+    text-align: right;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+.fa-star:hover {
+    transform: scale(1.3);
+}
+
+.fa-code-fork:hover {
+    transform: scale(1.3);
+}
+.fa-eye:hover {
+    transform: scale(1.3);
+}
+.projects h1 {
+    padding-left: 8px;
+    font-size: 18px;
+}
+.projects p {
+    padding-left: 8px;
+    font-size: 15px;    
+    color: rgb(119, 118, 118);
+}
+.Your-Projects h1 {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-left: 10px;
+}
+.Announcements {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.Announcements>h1 {
+    font-size: 16px;
+    padding-top: 10px;
+}
+.Announcements .A-contents {
+    background-color: white;
+    margin-right: 20px;
+    border-radius: 8px;
+    
+}
+.A-contents h1 {
+    padding-top: 25px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+.A-contents p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 12px;
+    color: rgb(119, 118, 118);  
+    font-family: sans-serif; 
+}
+.upp {
+    padding-bottom: 20px;
+}
+.space-line {
+    overflow: hidden;
+    border-width: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.trending {
+    grid-row:auto;
+    grid-column: 2/3;
+    display: grid;
+    grid-template: repeat(4,0.9fr) / repeat(1,3fr);
+    gap: 0;
+    background-color: white;
+    height: 258px;
+}
+.Trending>h1 {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: sans-serif;
+}
+.Trending p {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family:sans-serif;
+    font-weight: bold;
+}
+#part {
+    padding-top: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    color: darkgray;
+}
+.jack {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(1,1fr) repeat(1,3fr);
+    gap: 0;
+}
+
+.kendall {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(1,1fr) repeat(1,3fr);
+    gap: 0;
+}
+.jonas {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(1,1fr) repeat(1,3fr);
+    gap: 0;
+}
+.alex {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    display: grid;
+    grid-template: repeat(1,1fr) / repeat(1,1fr) repeat(1,3fr);
+    gap: 0;
+}
+.jack  {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.jack img {
+    margin-top: 16px;
+}
+.kendall img {
+    margin-top: 16px;
+}
+.jonas img {
+    margin-top: 16px;
+}
+.alex img {
+    margin-top: 16px;
+}
+.trending div img {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 50%;
+}
+.alex  {
+    margin-top: 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.userinfo {
+    height: 40px;
+    line-height: 1;
+}
